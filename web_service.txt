@@ -1,0 +1,41 @@
+1:
+	a) All district list:    		http://krishighar.com/service/data_new.php?q=district
+	b) Districts greater than id:  	http://krishighar.com/service/data_new.php?q=district&c=id
+
+2: 
+	a) all crop list: 		http://krishighar.com/service/data_new.php?q=crop
+	b) crop list greater than id: 	http://krishighar.com/service/data_new.php?q=crop&c=id
+
+3:
+	a) All cropcategory list:    	http://krishighar.com/service/data_new.php?q=cropcategory
+	b) cropcategory greater than id:  	http://krishighar.com/service/data_new.php?q=cropcategory&c=id
+
+4: 
+	a) all user list: 		http://krishighar.com/service/data_new.php?q=user
+	b) user list greater than id: 	http://krishighar.com/service/data_new.php?q=user&c=id
+	
+5: 
+	a) all info list: 		http://krishighar.com/service/data_new.php?q=info
+	b) info list greater than id: 	http://krishighar.com/service/data_new.php?q=info&c=id
+	c) info list under userid: 	http://krishighar.com/service/data_new.php?q=info&uid=uid
+	
+6: 
+	a) all cropvariety list: 			http://krishighar.com/service/data_new.php?q=cropvariety
+	b) info cropvariety greater than id: 	http://krishighar.com/service/data_new.php?q=cropvariety&c=id
+
+7: 
+	a) all croptechnology list: 		http://krishighar.com/service/data_new.php?q=croptechnology
+	b) info croptechnology greater than id: 	http://krishighar.com/service/data_new.php?q=croptechnology&c=id
+
+8: 
+	a) all newtechnology list: 		http://krishighar.com/service/data_new.php?q=newtechnology
+	b) info newtechnology greater than id: 	http://krishighar.com/service/data_new.php?q=newtechnology&c=id
+	
+9: 
+	a) all diarycategory list: 		http://krishighar.com/service/data_new.php?q=diarycategory
+	b) info diarycategory greater than id: 	http://krishighar.com/service/data_new.php?q=diarycategory&c=id
+
+10: 
+	a) all diary list: 		http://krishighar.com/service/data_new.php?q=diary
+	b) info diary greater than id: 	http://krishighar.com/service/data_new.php?q=diary&c=id
+	c) info diary under diarycategory: 	http://krishighar.com/service/data_new.php?q=diary&cat=cat

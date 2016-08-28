@@ -1,0 +1,32 @@
+AddType text/x-component .htc
+
+RewriteEngine On
+# localhost
+ RewriteBase /service
+# live
+# RewriteBase /
+
+#json web service for app
+RewriteRule ^data/([-A-Za-z0-9]+)/([-A-Za-z0-9]+) data.php?q=$1&c=$2 [L]
+RewriteRule ^data/([-A-Za-z0-9]+) data.php?q=$1 [L]
+
+#json web service for test app
+RewriteRule ^test/([-A-Za-z0-9]+)/([-A-Za-z0-9]+) test.php?q=$1&c=$2 [L]
+RewriteRule ^test/([-A-Za-z0-9]+) test.php?q=$1 [L]
+RewriteRule ^eng/repo eng.php [L]
+
+#json web service for UNDP
+RewriteRule ^pricedata/([-A-Za-z0-9]+)/([-A-Za-z0-9]+) pricedata.php?q=$1&c=$2 [L]
+RewriteRule ^pricedata/([-A-Za-z0-9]+) pricedata.php?q=$1 [L]
+
+#json web service for question
+#RewriteRule ^getquestion/([-A-Za-z0-9]+) questionanswer.php?q=$0&c=$1 [L]
+#RewriteRule ^getquestion questionanswer.php?q=$0 [L]
+
+#json web service for answer
+#RewriteRule ^answer/([-A-Za-z0-9]+) questionanswer.php?q=$0&c=$1 [L]
+#RewriteRule ^answer questionanswer.php?q=$0 [L]
+
+#json web service for information
+#RewriteRule ^information/([-A-Za-z0-9]+) data.php?q=$0&id=$1 [L]
+#RewriteRule ^information data.php?q=$0 [L]

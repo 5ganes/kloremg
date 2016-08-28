@@ -1,0 +1,54 @@
+AddType text/x-component .htc
+
+RewriteEngine On
+# localhost
+ RewriteBase /krishighar/
+# live
+# RewriteBase /
+
+RewriteRule ^home index.php [L]
+
+RewriteRule ^agri-news.html index.php?action=agri-news [L]
+RewriteRule ^farmers-diary.html index.php?action=farmers-diary [L]
+
+RewriteRule ^our-videos/([0-9]+)$ index.php?action=youtube_video&crop=$1 [L]
+RewriteRule ^our-videos index.php?action=youtube_video [L]
+
+RewriteRule ^info-login.html index.php?action=infologin [L]
+RewriteRule ^information index.php?action=information [L]
+RewriteRule ^sent-information.html index.php?action=sentinformation [L]
+RewriteRule ^user-questions.html index.php?action=userquestions [L]
+
+#forgot password users
+RewriteRule ^forgotpassword.html index.php?action=forgotpassword [L]
+
+#reset password users
+RewriteRule ^resetpswd.html/([-A-Za-z0-9]+) index.php?action=resetpswd&token=$1 [L]
+
+RewriteRule ^contact-us index.php?action=contact-us [L]
+RewriteRule ^category-([-A-Za-z0-9]+).html$ index.php?url=$1&action=showcategory [L]
+RewriteRule ^crop-([-A-Za-z0-9]+).html$ index.php?url=$1&action=showcrop
+
+# fro PRODUCTLIST
+RewriteRule ^productlist/([-A-Za-z]+)/([-A-Za-z0-9]+)$ index.php?action=productlist&$1=$2 [L]
+RewriteRule ^productlist index.php?action=productlist [L]
+
+# fro TESTIMONIALS and FEEDBACK
+RewriteRule ^testimonials/([-A-Za-z]+)/([-A-Za-z0-9]+)$ index.php?action=testimonials&$1=$2 [L]
+RewriteRule ^testimonials index.php?action=testimonials [L]
+
+#for agri learning
+RewriteRule ^agri-learning.html$ index.php?action=agri-learning [L]
+
+RewriteRule ^feedback/([-A-Za-z]+)/([-A-Za-z0-9]+)$ index.php?action=feedback&$1=$2 [L]
+RewriteRule ^feedback index.php?action=feedback [L]
+
+RewriteRule ^([-A-Za-z0-9]+)/page/([0-9]+)$ index.php?query=$1&page=$2 [L]
+RewriteRule ^([-A-Za-z0-9]+)$ index.php?query=$1 [L]
+#RewriteRule index.html$ index.php [L]
+
+#RewriteRule ^gallery/([0-9]+)\.html$ index.php?galleryId=$1 [L]
+#RewriteRule ^testimonials/([-A-Za-z0-9]+)\.html$ index.php?action=testimonials&$1 [L]
+#RewriteRule ^search/([-A-Za-z0-9]+)/([0-9])\.html$ index.php?action=search&keyword=$1&page=$2 [L]
+#RewriteRule ^([-A-Za-z0-9]+)/([-A-Za-z0-9]+)\.html$ index.php?action=$1&title=$2 [L]
+#RewriteRule ^([-A-Za-z0-9]+)\.html$ index.php?title=$1 [L]

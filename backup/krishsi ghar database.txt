@@ -1,0 +1,15 @@
+Database Username and Password
+
+ username: “krishigh_user” with password: ;_%6qo;P#s6T.
+
+
+C panel username and Password
+
+UserName: krishigh
+
+PassWord: q.l*OfE#wQxP
+
+Admin Username and Password
+
+username:malla
+password: malla23
