@@ -186,7 +186,12 @@ while($r = mysql_fetch_array($sql, MYSQL_ASSOC)) {
 	//$rows['body'][] = $r;
 	$rows[] = $r;
 }
-print json_encode($rows);
+$result = json_encode($rows);
+
+header('Content-Length: '.strlen($result)); 
+header('Content-type: application/json');
+
+echo $result;
 
 //html tags truncate
 //echo $data;
