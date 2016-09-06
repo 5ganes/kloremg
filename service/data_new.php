@@ -175,6 +175,16 @@ else if($qtype=="information" and isset($_GET['c']))
 	$sql="select questions.name as name,questions.phone as phone,questions.email as email,questions.question as question,questions.deviceId as deviceId,questions.infoId as infoId,reply.answer as answer,reply.questionId as questionId,reply.providerId as providerId from questions,reply where questions.infoId=$id and questions.id=reply.questionId and questions.publish='Yes' and reply.publish='Yes'";
 	//echo $sql; die();
 }
+if($qtype=="disease")
+{
+        if(isset($_GET['c'])){
+		$c=$_GET['c'];
+		$sql="select id,name,cause,symptom,prevention,treatment,contents,weight,cropId from disease where cropId='$c' and publish='Yes' order by weight";
+	}
+	else{
+	    $sql="select id,name,cause,symptom,prevention,treatment,contents,weight,cropId from disease where publish='Yes' order by cropId";
+        }
+}
 
 
 //echo $sql; die();

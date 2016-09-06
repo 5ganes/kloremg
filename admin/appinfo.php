@@ -27,8 +27,12 @@ if($_POST['type'] == "Update")
 if($_GET['type']=="status")
 { 
 	$cdetail = $information -> updateStatus($id);
-  $information->sendEmailToUser($id);
-	header("Location: appinfo.php?msg=Information status changed successfully");
+  if($_GET['status']=='No'){
+    $information->sendEmailToUser($id);
+    $information->sendNotification($id);
+  }
+	
+  header("Location: appinfo.php?msg=Information status changed successfully");
 	exit();
 }
 elseif($_GET['type']=="del")
@@ -352,7 +356,7 @@ elseif($_GET['type']=="show" )
 
 														?>
 
-														<a href="appinfo.php?type=status&id=<?=$row['id']?>">[Enable]</a>
+														<a href="appinfo.php?type=status&id=<?=$row['id']?>&status=<?=$row['publish']?>">[Enable]</a>
 
 														<?php
 
@@ -366,7 +370,7 @@ elseif($_GET['type']=="show" )
 
 													 	?>
 
-														<a href="appinfo.php?type=status&id=<?=$row['id']?>">[Disable]</a> 
+														<a href="appinfo.php?type=status&id=<?=$row['id']?>&status=<?=$row['publish']?>">[Disable]</a> 
 
 														<?php
 
