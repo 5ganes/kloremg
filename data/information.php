@@ -163,11 +163,12 @@ class Information
 			// prep the bundle
 			$info=mysql_fetch_array(mysql_query("select name from information where id='$info_id'"));
 			// echo $info['name']; die();
+			//$query="update information set contents='test info contents' where id='157'";
 			$msg = array
 			(
 				'message' 	=> $info['name'],
-				'title'		=> '',
-				'subtitle'	=> 'Subtitle',
+				'query'		=> "",
+				'subtitle'	=> '',
 				'tickerText'	=> 'Ticker Text',
 				'vibrate'	=> 1,
 				'sound'		=> 1,
