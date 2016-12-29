@@ -1,3 +1,0 @@
-<?php
-$groups->writeBreadCrumb($pageId);
-?>
