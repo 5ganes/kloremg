@@ -1,12 +1,12 @@
 <div id="topContainer">
     
     <div class="grid1"> 
-        <figure class="icon"><a href="#"><img src="images/agri_learning.png"></a></figure>
-        <h4 class="text-1"> <a href="#"> एग्री लर्निङ</a></h4>
+        <figure class="icon"><a href="agri-learning.html"><img src="images/agri_learning.png"></a></figure>
+        <h4 class="text-1"> <a href="agri-learning.html"> एग्री लर्निङ</a></h4>
         <p class="text-2"> 
             वेबसाइट
         </p>
-        <p class="btn"><a href="#" class="button-1"> क्लिक गर्नुहोस</a></p>
+        <p class="btn"><a href="agri-learning.html" class="button-1"> क्लिक गर्नुहोस</a></p>
     </div>
 
     <div class="grid1">
