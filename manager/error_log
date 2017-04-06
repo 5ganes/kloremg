@@ -387,3 +387,10 @@
 [05-Apr-2016 14:39:37] PHP Notice:  Undefined index:  type in /home/krishwt5/public_html/manager/index.php on line 47
 [05-Apr-2016 14:39:37] PHP Notice:  Undefined index:  type in /home/krishwt5/public_html/manager/index.php on line 59
 [05-Apr-2016 14:39:37] PHP Notice:  Undefined variable: pageTitle in /home/krishwt5/public_html/includes/paging.php on line 79
+[10-Jan-2017 04:58:28] PHP Notice:  Use of undefined constant ADMIN_GALLERY_LIMIT - assumed 'ADMIN_GALLERY_LIMIT' in /home/krishwt5/public_html/admin/init.php on line 57
+[10-Jan-2017 04:58:28] PHP Notice:  Constant ADMIN_GALLERY_LIMIT already defined in /home/krishwt5/public_html/data/constants.php on line 39
+[12-Feb-2017 16:47:41] PHP Notice:  Use of undefined constant ADMIN_GALLERY_LIMIT - assumed 'ADMIN_GALLERY_LIMIT' in /home/krishwt5/public_html/admin/init.php on line 57
+[12-Feb-2017 16:47:41] PHP Notice:  Constant ADMIN_GALLERY_LIMIT already defined in /home/krishwt5/public_html/data/constants.php on line 39
+[12-Feb-2017 16:47:42] PHP Notice:  Use of undefined constant ADMIN_GALLERY_LIMIT - assumed 'ADMIN_GALLERY_LIMIT' in /home/krishwt5/public_html/admin/init.php on line 57
+[12-Feb-2017 16:47:42] PHP Notice:  Constant ADMIN_GALLERY_LIMIT already defined in /home/krishwt5/public_html/data/constants.php on line 39
+[12-Feb-2017 16:47:42] PHP Notice:  Undefined variable: PHP_SELF in /home/krishwt5/public_html/manager/mgrlogin.php on line 21

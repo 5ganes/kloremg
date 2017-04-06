@@ -13,9 +13,10 @@
 			$this->uname = "root"; 		
 			$this->psw = "";					
 			$this->dbname = "krishighar";
-			// $this->host = "localhost";
+			
+   			//$this->host = "localhost";
 			// $this->uname = "krishwt5_ghar"; 		
-			// $this->psw = "kR%is5#hi_gh1ar";					
+			// $this->psw = "q}?2QC*AQ&[P";					
 			// $this->dbname = "krishwt5_ghar";
 			
 			$this->links = mysql_connect($this->host,$this->uname,$this->psw) or die("Sorry, couldnot connect to MySQL Server");

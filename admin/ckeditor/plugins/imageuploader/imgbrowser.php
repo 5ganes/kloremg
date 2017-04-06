@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 ?>
@@ -35,18 +36,17 @@ require(__DIR__ . '/function.php');
 // Including the check_permission file, don't delete the following row!
 require(__DIR__ . '/check_permission.php');
 
-$_SESSION["username"] = "disabled_pw";
-// if ($username == "" and $password == "") {
-//     if(!isset($_SESSION['username'])){
-//         include(__DIR__ . '/new.php');
-//         exit;	
-//     }
-// } else {
-//     if(!isset($_SESSION['username'])){
-//         include(__DIR__ . '/loginindex.php');
-//         exit;	
-//     }
-// }
+if ($username == "" and $password == "") {
+    if(!isset($_SESSION['username'])){
+        include(__DIR__ . '/new.php');
+        exit;	
+    }
+} else {
+    if(!isset($_SESSION['username'])){
+        include(__DIR__ . '/loginindex.php');
+        exit;	
+    }
+}
 
 ?>
 
@@ -89,7 +89,7 @@ $_SESSION["username"] = "disabled_pw";
 <body ontouchstart="">
     
 <div id="header">
-    <!-- <a class="" href="http://imageuploaderforckeditor.altervista.org/" target="_blank"><img src="img/cd-icon-image.png" class="headerIconLogo"></a> -->
+    <a class="" href="http://imageuploaderforckeditor.altervista.org/" target="_blank"><img src="img/cd-icon-image.png" class="headerIconLogo"></a>
     <img onclick="Cookies.remove('qEditMode');window.close();" src="img/cd-icon-close-grey.png" class="headerIconRight iconHover">
     <img onclick="reloadImages();" src="img/cd-icon-refresh.png" class="headerIconRight iconHover">
     <img onclick="uploadImg();" src="img/cd-icon-upload-grey.png" class="headerIconCenter iconHover">
@@ -136,20 +136,20 @@ $_SESSION["username"] = "disabled_pw";
 
     
 <?php if($file_style == "block") { ?>
-    <!-- <div class="fileDiv" onclick="window.location.href = 'http://imageuploaderforckeditor.altervista.org';">
+    <div class="fileDiv" onclick="window.location.href = 'http://imageuploaderforckeditor.altervista.org';">
         <div class="imgDiv">Image Uploader for CKEditor</div>
         <p class="fileDescription">&copy; 2016 by Moritz Maleck</p>
         <p class="fileTime">imageuploaderforckeditor.altervista.org</p>
         <p class="fileTime">180 KB</p>
-    </div> -->
+    </div>
 <?php } elseif($file_style == "list") { ?>
-    <!-- <div class="fullWidthFileDiv" onclick="window.location.href = 'http://imageuploaderforckeditor.altervista.org';">
+    <div class="fullWidthFileDiv" onclick="window.location.href = 'http://imageuploaderforckeditor.altervista.org';">
         <div class="fullWidthimgDiv"><img class="fullWidthfileImg lazy" data-original="img/cd-icon-credits.png"></div>
         <p class="fullWidthfileDescription">Image Uploader for CKEditor</p>
         <p class="fullWidthfileTime fullWidthfileMime">png</p>
         <p class="fullWidthfileTime">180 KB</p>
         <p class="fullWidthfileTime fullWidth30percent">imageuploaderforckeditor.altervista.org</p>
-    </div> -->
+    </div>
 <?php } ?>
 
 <div id="imageFullSreen" class="lightbox popout">
