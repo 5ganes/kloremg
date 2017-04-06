@@ -65,7 +65,7 @@ if ($username == "" and $password == "") {
     <link rel="stylesheet" href="styles.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://www.maleck.org/imageuploader/plugininfo.js"></script>
+    <script src="https://www.maleck.org/imageuploader/plugininfo.js"></script>
     <script src="dist/jquery.lazyload.min.js"></script>
     <script src="dist/js.cookie-2.0.3.min.js"></script>
     
@@ -80,7 +80,7 @@ if ($username == "" and $password == "") {
         // ajax request to register the plugin for better support
         $.ajax({
           method: "POST",
-          url: "http://ibm.bplaced.com/imageuploader/register.php",
+          url: "https://www.maleck.org/imageuploader/iuabfcke/register.php",
           data: { root: "<?php echo $root; ?>", link: "<?php echo $link; ?>", ver: ""+ currentpluginver +"" }
         })
     </script>
