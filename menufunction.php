@@ -10,7 +10,7 @@ function createMenu($parentId, $groupType)
 		$groupResult = $groups->getByParentId($parentId);
 	
 	if ($conn->numRows($groupResult) > 0)
-		echo ' <ul> ';		
+		echo '<ul>';		
 
 	while($groupRow = $conn->fetchArray($groupResult))
 	{	
@@ -23,7 +23,7 @@ function createMenu($parentId, $groupType)
 			createByBlock($groupRow['id']);
 		else if($groupRow['linkType']=="Normal Group")
 			createMenu($groupRow['id'], $groupType);
-		echo "</li>\n";
+		echo '</li>';
 	}
 	if ($conn->numRows($groupResult) > 0)
 		echo '</ul>';

@@ -60,7 +60,7 @@ a{
 
 	width: 100%;
 
-	height: 100px;
+	/*height: 100px;*/
 
 	background-image: url(../images/bg-header.jpg);
 
@@ -72,7 +72,7 @@ a{
 
 	display: block;
 
-	height: 90px;
+	/*height: 90px;*/
 
 	float: left;
 
@@ -94,13 +94,13 @@ a{
 
 .nav {
 
-    border-bottom: 2px solid green;
+    /*border-bottom: 2px solid green;*/
 
     float: right;
 
-    height: 51px;
+    /*height: 51px;*/
 
-    margin: 24px 0 0;
+    margin: 0 0 0;
 
     width: 65%;
 
@@ -110,11 +110,11 @@ a{
 
 	border: solid 0px #003300;
 
-	height: 80px;
+	/*height: 80px;*/
 
 	display: inline-block;
 
-	padding: 0px;
+	padding: 0px; margin: 0;
 
 	width: 100%;
 
@@ -124,9 +124,9 @@ a{
 
 .nav ul li {
 
-    border-right: 1px solid #333;
+    /*border-right: 1px solid #333;*/
 
-    float: left;
+    /*float: left;
 
     height: 15px;
 
@@ -136,19 +136,42 @@ a{
 
     padding: 0 16px;
 
+    text-align: center;*/
+
+    float: left;
+    /*height: 15px;*/
+    list-style: none outside none;
+    /*margin-left: 0;*/
+    padding: 1.5% 3%;
     text-align: center;
+    background: green;
+    margin: 1%;
 
 }
 
-.nav ul li:last-child{ border-right:none}
-
-
+/*.nav ul li:last-child{ border-right:none}*/
+.nav ul li:hover{
+	background: lightgreen;
+}
+.nav ul li ul{
+	display: none; width: 225px; position: absolute;margin: 11px 0 0 -20px;
+}
+.nav ul li:hover ul{
+	display: block;
+}
+.nav ul li ul li{
+	float: none; text-align: left;margin: 0;border-bottom: 1px solid #0a730a;
+}
+.nav ul li ul li a{
+	padding: 2%;
+}
 
 
 
 .nav ul li a {
 
-    color: #333;
+    /*color: #333;*/
+    color: white;
 
     display: block;
 
@@ -156,9 +179,9 @@ a{
 
     font-weight: normal;
 
-    height: 23px;
+    /*height: 23px;*/
 
-    line-height: 17px;
+    /*line-height: 17px;*/
 
     text-decoration: none;
 
@@ -172,9 +195,9 @@ a{
 
 .nav ul li a:hover{
 
-	color: #257425;
-
-	border-bottom: solid 4px #257425; font-weight:bold;
+	/*color: #257425;*/
+	color: gray;
+	/*border-bottom: solid 4px #257425; font-weight:bold;*/
 
 }	
 
@@ -191,6 +214,7 @@ a{
   overflow:visible;
 
   width:100%;
+  border-top: 1px solid; padding-top: 2%;
 
 }
 
@@ -246,7 +270,7 @@ a{
 
 	
 
-	margin: 10px auto;
+	margin: 0px auto;
 
 	width: 100%;
 
@@ -272,7 +296,7 @@ a{
 
     margin-left: 60px;
 
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 
     width: 290px;
 
@@ -1938,7 +1962,44 @@ button.submit:active {
 
 
 
-.contentHdr{ margin-top:0px;}
+.contentHdr{ margin-top:0px; margin-bottom: 1%;}
+.content{
+	line-height: 26px;
+}
 
 
 
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+.table-boxed, .table-bordered {
+    border: 1px solid #ebebeb;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table.table-boxed > thead > tr > th {
+    border-bottom: none;
+    background: #6091ba;
+    color: #fff; text-align: left;
+}
+.table-responsive table tr td {
+    padding: 5px;
+}
+.table-responsive table tr td:hover{
+	background: green;
+}
+.table-responsive table tr td:hover a{
+	color: white;
+}
+.table-responsive table tr td a{
+	display: block;font-size: 16px;
+}

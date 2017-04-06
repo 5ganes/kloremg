@@ -14,7 +14,7 @@
 				?>
         	   	
                 <div class="contentHdr" style="">
-                        <h2 style="margin-top:50px">Our Contact Information:</h2>
+                        <h2 style="margin-top:0px">Our Contact Information:</h2>
                 </div>
                 
 				<?php

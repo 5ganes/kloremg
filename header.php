@@ -3,6 +3,7 @@
     <div class="nav">
         <? createMenu(0, "Header"); ?>
     </div>
+    <div style="clear: both;"></div>
     <!-- Navigation-->
 </div>
-<!-- Header--->
+<!-- Header-->
