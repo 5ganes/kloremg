@@ -1,24 +1,18 @@
-
 <?php
 session_start();
 ?>
-
 <!-- Copyright (c) 2015, Fujana Solutions - Moritz Maleck. All rights reserved. -->
 <!-- For licensing, see LICENSE.md -->
-
 <?php
-
 // Don't remove the following two rows
 $link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $root = "http://$_SERVER[HTTP_HOST]";
-
 // checking lang value
 if(isset($_COOKIE['sy_lang'])) {
     $load_lang_code = $_COOKIE['sy_lang'];
 } else {
     $load_lang_code = "en";
 }
-
 // including lang files
 switch ($load_lang_code) {
     case "en":
@@ -28,7 +22,6 @@ switch ($load_lang_code) {
         require(__DIR__ . '/lang/pl.php');
         break;
 }
-
 // Including the plugin config file, don't delete the following row!
 require(__DIR__ . '/pluginconfig.php');
 // Including the functions file, don't delete the following row!
@@ -36,20 +29,19 @@ require(__DIR__ . '/function.php');
 // Including the check_permission file, don't delete the following row!
 require(__DIR__ . '/check_permission.php');
 
-if ($username == "" and $password == "") {
-    if(!isset($_SESSION['username'])){
-        include(__DIR__ . '/new.php');
-        exit;	
-    }
-} else {
-    if(!isset($_SESSION['username'])){
-        include(__DIR__ . '/loginindex.php');
-        exit;	
-    }
-}
-
+// if ($username == "" and $password == "") {
+//     if(!isset($_SESSION['username'])){
+//         include(__DIR__ . '/new.php');
+//         exit;	
+//     }
+// } else {
+//     if(!isset($_SESSION['username'])){
+//         include(__DIR__ . '/loginindex.php');
+//         exit;	
+//     }
+// }
+$_SESSION["username"] = "disabled_pw";
 ?>
-
 <!DOCTYPE html>
 <html lang="en"
       ondragover="toggleDropzone('show')"

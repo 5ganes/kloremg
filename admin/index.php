@@ -56,4 +56,3 @@ if(!isset($_SESSION['sessUserId'])){		//User authentication
 </table>
 </body>
 </html>
-die();
