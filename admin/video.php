@@ -289,9 +289,10 @@ if($_GET['type']=="del")
 							if(isset($_GET['cropId']))
 							{
 								$counter = 0;
-								$limit = 50;
+								$limit = 40;
 								$sql = "SELECT * FROM video where cropId='$cropId'";
 								$sql=$sql." ORDER BY weight";
+                $pagename = "video.php?cropId=74&";
 								include("paging.php");
 								while($row = $conn -> fetchArray($result))
 								{?>
