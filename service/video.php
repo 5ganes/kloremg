@@ -24,9 +24,9 @@ while($r = mysql_fetch_array($sql, MYSQL_ASSOC)) {
 		$rows[] = $r;
 	}
 	else if($qtype == 'videos-with-cropid-as-objects'){
-		$cropId = $r['cropId'];
-		unset($r['cropId']);
-		$rows[$cropId][] = $r;
+		$object = $r['cropId'].','.$r['cropName'];
+		unset($r['cropId']); unset($r['cropName']);
+		$rows[$object][] = $r;
 	}
 }
 print json_encode($rows);
