@@ -6,7 +6,7 @@ $conn = new Dbconn();
 $qtype=$_GET['q'];
 if($qtype=="videos" or $qtype == 'videos-with-cropid-as-objects'){
 	$sql="select 
-			crop.id as cropId, video.id as videoId,video.name as videoTitle,video.url as videoUrl 
+			crop.id as cropId, crop.name as cropName, video.id as videoId,video.name as videoTitle,video.url as videoUrl 
 		  from 
 			crop 
 		  left join 
