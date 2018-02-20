@@ -28,8 +28,8 @@ if($_GET['type']=="status")
 { 
 	$cdetail = $information -> updateStatus($id);
   if($_GET['status']=='No'){
-    $information->sendEmailToUser($id);
-    $information->sendNotification($id);
+    //$information->sendEmailToUser($id);
+    //$information->sendNotification($id);
   }
 	
   header("Location: appinfo.php?msg=Information status changed successfully");
